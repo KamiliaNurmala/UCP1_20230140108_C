@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Web3 Course</title>
+    <meta name="description" content="Get in touch with us for any questions about our Web3 course.">
+    <meta name="keywords" content="contact, Web3 course, blockchain, smart contracts, dApps">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Internal CSS Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1em 2em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 2em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00ccff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        /* Contact Form Styles */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin: 2em 0;
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #00ccff;
+            outline: none;
+        }
+
+        .interest-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+            margin-top: 0.5em;
+        }
+
+        .interest-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+
+        .submit-button {
+            background: #00ccff;
+            color: #fff;
+            border: none;
+            padding: 1em 2em;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background: #0099cc;
+        }
+
+        /* Contact Info Styles */
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+        }
+
+        .info-icon {
+            font-size: 1.5em;
+            color: #00ccff;
+            margin-right: 1em;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            display: flex;
+            gap: 1em;
+            margin-top: 1.5em;
+        }
+
+        .social-links a {
+            color: #333;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #00ccff;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #4CAF50;
+            color: #fff;
+            padding: 1em;
+            border-radius: 5px;
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5em 0;
+            }
+
+            .interest-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cube"></i> Web3 Course
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-hero">
+            <h1>Contact Us</h1>
+            <p>Have questions about our Web3 course? We're here to help!</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope info-icon"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@web3course.com">info@web3course.com</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone info-icon"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Blockchain Street<br>Crypto City, Web3 Land</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/web3course"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/web3course"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/web3course"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Register Your Interest</h2>
+                <form id="registrationForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Areas of Interest</label>
+                        <div class="interest-options">
+                            <div class="interest-option">
+                                <input type="checkbox" id="blockchain" name="interest" value="blockchain">
+                                <label for="blockchain">Blockchain Development</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" id="smart-contracts" name="interest" value="smart-contracts">
+                                <label for="smart-contracts">Smart Contracts</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" id="dapps" name="interest" value="dapps">
+                                <label for="dapps">dApp Development</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" id="defi" name="interest" value="defi">
+                                <label for="defi">DeFi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Registration</button>
+                </form>
+                <div id="successMessage" class="success-message">
+                    Thank you for your interest! We'll contact you soon.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Web3 Course</h3>
+                <p>Empowering the next generation of blockchain developers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Web3 Course. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            
+            // Show success message
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            
+            // Show alert
+            alert(`Thank you ${name}! Your message has been sent successfully.`);
+            
+            // Reset form
+            event.target.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+            
+            return false;
+        }
+    </script>
+</body>
+</html>
